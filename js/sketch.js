@@ -3,7 +3,7 @@ var mod = 0;
 var up = 1;
 
 function setup(){
-    createCanvas(800, 800);
+    createCanvas(1200, 1200);
     pixelDensity(1);
 }
 
