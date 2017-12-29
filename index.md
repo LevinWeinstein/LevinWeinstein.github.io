@@ -20,6 +20,8 @@
 > 'Disctrict on 5th' is a solid **mid-range** option for _off campus housing_. The major **_downside_**
 > is that there are **NO** `one bedroom apartments`, but the _single rooms_ available start nearly
 > **$200 _cheaper_ per month** than those at Sol Y Luna. The website also has some mention of __*flexible lease terms*__
+5. [The Cadence - Upper Midrange on UA Site - One bedroom $1204 - Room in Shared $750 - $900 - Furnished](https://thecadencetucson.com/)![Tidy and Crisp](https://thecadencetucson.com/wp-content/uploads/sites/38/2017/07/Pool-The-Cadence-Tucson-AZ-PJ03319-PH-16-800x800.jpg)
+>Although this may be a great _high end option_ for next year potentially, it is not available until fall.
 
 > Worth noting is that `Sahara Apartments` offers `short term rentals`. This may
 > be the best option for `Spring 2018`, since other locations such as `Sol Y Luna`,
