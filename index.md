@@ -1,5 +1,4 @@
 # Options for Housing - Tucson - Spring 2017
 * Unfurnished
-	* [![Foo](https://images.craigslist.org/00L0L_hhzzYRef8zM_1200x900.jpg)] https://tucson.craigslist.org/apa/d/great-one-bedroom-gh-with/6414756999.html 
-
+	* [One Bedroom Near UA](https://tucson.craigslist.org/apa/d/great-one-bedroom-gh-with/6414756999.html)![Foo](https://images.craigslist.org/00L0L_hhzzYRef8zM_1200x900.jpg)
 * Furnished only on
