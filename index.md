@@ -10,6 +10,7 @@
 > advantage that if it ends up being a fun place to live, I could continue to stay
 > here for an incredibly `cost-efficient` rate through multiple semesters.
 3. [Sol y Luna - Prettiest on UA Site - 1 Bedroom apt $1535+ - Room in shared apt $875+ - Furnished](https://www.livesolyluna.com/sol-y-luna-tucson-az/)![Beautiful](https://www.livesolyluna.com/uploads/images/images/original/282460/LEVEL_at_AU_22.jpg?1507855121)
+> `Sol y Luna` is just *gorgeous*. 
 4. [District on 5th - Midrange on UA Site - No 1 Bedrooms - Room in shared apt $690 - $825 - Furnished](http://www.districton5th.com/)![Not Bad](http://www.districton5th.com/~/media/301%20-%20District%20on%205th/Images/301-64-Web.jpg?h=314&w=470&bc=FFFFFF)
 
 > Worth noting is that `Sahara Apartments` offers `short term rentals`. This may
