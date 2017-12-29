@@ -17,6 +17,9 @@
 > day, it's hard to justify the worth of something in this price range when so many alternatives
 > are available, _but we should **still** see the difference in_`quality`
 4. [District on 5th - Midrange on UA Site - No 1 Bedrooms - Room in shared apt $690 - $825 - Furnished](http://www.districton5th.com/)![Not Bad](http://www.districton5th.com/~/media/301%20-%20District%20on%205th/Images/301-64-Web.jpg?h=314&w=470&bc=FFFFFF)
+> 'Disctrict on 5th' is a solid **mid-range** option for _off campus housing_. The major **_downside_**
+> is that there are **NO** `one bedroom apartments`, but the _single rooms_ available start nearly
+> **$200 _cheaper_ per month** than those at Sol Y Luna. The website also has some mention of __*flexible lease terms*__
 
 > Worth noting is that `Sahara Apartments` offers `short term rentals`. This may
 > be the best option for `Spring 2018`, since other locations such as `Sol Y Luna`,
