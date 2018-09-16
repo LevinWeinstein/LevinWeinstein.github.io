@@ -2,27 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test Scores</title>
-    <link rel=themeData href="testscores_files/themedata.thmx">
-    <link rel=colorSchemeMapping href="testscores_files/colorschememapping.xml">
-    <style>
-        table {
-            table-layout: fixed;
-            width: 80%;
+    <title>Levin Weinstein</title>
+    <link rel="stylesheet" href="styles.css">
 
-        }
-        td{
-            width:30%;
-            height:30%;
-            text-align: center;
-        }
-
-        td p span {
-            font-size: 18.0pt;
-        }
-    </style>
 </head>
 <body>
-Hi I'm Levin
+<p class="title">Click on the div to start moving around  (use arrow keys)</p>
+<div class="pool" tabindex='0' onKeyDown="processMove(event)">
+    <div class="row" id="row0">
+        <div class="box" id="box0"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+    </div>
+
+    <div class="row" id="row1">
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+    </div>
+
+    <div class="row" id="row2">
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7"></div>
+        <div class="box" id="box8"></div>
+    </div>
+</div>
+<script src="gameLogic.js"></script>
 </body>
 </html>
