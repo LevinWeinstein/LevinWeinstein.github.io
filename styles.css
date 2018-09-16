@@ -12,7 +12,7 @@ body{
 .pool{
     width: 490px;
     height: 490px;
-    margin: calc(50% - 400px) auto auto auto;
+    margin: calc(20vh) auto auto auto;
     background-color: #71B09F;
     display: flex;
     flex-wrap: wrap;
