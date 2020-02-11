@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>Long Sentence Counter</title> 
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+        #inputForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #displayResponses {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 15px;
+        }
+
+        .textSubmission {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100vw;
+            margin: -15px;
+        }
+
+        .sentenceLength {
+            font-family: 'Times New Roman', Times, serif;
+            flex: 1;
+            background-color: beige;
+        }
+
+        .sentenceBody {
+            font-family: 'Times New Roman', Times, serif;
+            flex: 5;
+            border-bottom: 1px solid grey;
+            background-color:aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="inputForm">
+        <h1>This tools lists your sentences by length.</h1>
+        <br>
+        <h5>
+            It does it <i>in your browser</i>, on the <b>front end.</b>
+        </h5>
+        <h6>(That is important because it means I can't steal your work!)</h6>
+
+        <form>
+            <label for="lengthLimit">Enter the maximum length of a sentence. Longer sentences will be displayed below.</label>
+            <input id="lengthLimit" name="lengthLimit" type="number" min="1" max="30" value="15">
+            <label for="inputText">Input Text</label>
+            <br>
+            <textarea id="inputText" name="inputText" rows="5" cols="125">Enter your essay here to get a list of long sentences.</textarea>
+            <br>
+            <input type="submit" onclick="listLongSentences(event)" value="submit">
+        </form>
+    </div>
+    <hr></hr>
+    <div id="displayResponses" hidden="true">
+
+    </div>
+    <script>
+
+        function getLongSentences(inputText, limit){
+            return inputText.split('.').filter(sentence => {
+                return sentence.split(/\s+/).length >= limit;
+            }).sort((sentence1, sentence2) => sentence2.split(/\s+/).length - sentence1.split(/\s+/).length )
+        }
+
+        function listLongSentences(event){
+            event.preventDefault();
+            var limit = +document.getElementById("lengthLimit").value;
+            var inputText = document.getElementById("inputText").value;
+            var longSentences = getLongSentences(inputText, limit);
+            var responseDiv = document.getElementById("displayResponses");
+
+            responseDiv.innerHTML = "";
+
+            if (longSentences.length == 0)
+                return ;
+
+            var new_submission = "<div class='textSubmission'>";
+            new_submission += "<p class='sentenceLength'><b>Sentence Length</b></p>";
+            new_submission += "<p class='sentenceBody'><b>Sentence Body</b></p>"
+            new_submission += "</div>";
+            responseDiv.innerHTML += new_submission;
+
+
+            longSentences.forEach(sentence => {
+                var new_submission = "<div class='textSubmission'>";
+                new_submission += "<p class='sentenceLength'>" + sentence.split(/\s+/).length + "</p>";
+                new_submission += "<p class='sentenceBody'>" + sentence + ".</p>"
+                new_submission += "</div>";
+                responseDiv.innerHTML += new_submission;
+            })
+
+            responseDiv.hidden = false;
+        }
+    </script>
+</body>
