@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Long Sentence Counter</title> 
+    <title>Sentence Length Tool</title> 
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif
@@ -41,13 +41,16 @@
             flex: 5;
             border-bottom: 1px solid grey;
             background-color:aliceblue;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
     </style>
 </head>
 <body>
     <div id="inputForm">
-        <h1>This tools lists your sentences by length.</h1>
+        <h1>This tool lists your sentences by length.</h1>
         <br>
         <h5>
             It does it <i>in your browser</i>, on the <b>front end.</b>
@@ -55,9 +58,8 @@
         <h6>(That is important because it means I can't steal your work!)</h6>
 
         <form>
-            <label for="lengthLimit">Enter the maximum length of a sentence. Longer sentences will be displayed below.</label>
+            <label for="lengthLimit">Enter the maximum length of a sentence:</label>
             <input id="lengthLimit" name="lengthLimit" type="number" min="1" max="30" value="15">
-            <label for="inputText">Input Text</label>
             <br>
             <textarea id="inputText" name="inputText" rows="5" cols="125">Enter your essay here to get a list of long sentences.</textarea>
             <br>
