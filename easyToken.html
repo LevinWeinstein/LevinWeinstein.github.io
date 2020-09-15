@@ -22,7 +22,7 @@
     } else if (fragment.indexOf("id_token") == -1){
         ReactDOM.render(<h1>No id_token Found in Fragment</h1>, root);
     } else {
-        const id_token = fragment.substring(fragment.indexOf("id_token=") + 9, frament.indexOf("&access_token"));
+        const id_token = fragment.substring(fragment.indexOf("id_token=") + 9, fragment.indexOf("&access_token"));
         ReactDOM.render(<h1><strong>Fragment:</strong>{id_token}</h1>, root);
     }
 </script>
