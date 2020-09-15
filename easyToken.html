@@ -23,7 +23,7 @@
         ReactDOM.render(<h1>No id_token Found in Fragment</h1>, root);
     } else {
         const cutLeft = fragment.substring(fragment.indexOf("id_token=") + 9);
-        const id_token = cutList.subString(0, cutLeft.indexOf("&"));
+        const id_token = cutLeft.subString(0, cutLeft.indexOf("&"));
         ReactDOM.render(<div><h1>id_token:</h1><textarea rows={5} cols={50}>{id_token}</textarea></div>, root);
     }
 </script>
