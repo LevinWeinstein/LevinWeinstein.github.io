@@ -19,12 +19,12 @@
     const root = document.getElementById("root");
 
     if (!fragment){
-        ReactDom.render(<h1>No Fragment Found</h1>, root);
+        ReactDOM.render(<h1>No Fragment Found</h1>, root);
     } else if (fragment.indexOf("id_token") == -1){
-        ReactDom.render(<h1>No id_token Found in Fragment</h1>, root);
+        ReactDOM.render(<h1>No id_token Found in Fragment</h1>, root);
     } else {
         const id_token = fragment.substring(fragment.indexOf("id_token=") + 9, frament.indexOf("&access_token"));
-        ReactDom.render(<h1><strong>Fragment:</strong>{id_token}</h1>, root);
+        ReactDOM.render(<h1><strong>Fragment:</strong>{id_token}</h1>, root);
     }
 </script>
 
