@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Levin Weinstein</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+<script type="text/babel">
+    const fragment = window.location.hash;
+
+    const root = document.getElementById("root");
+
+    if (!fragment){
+        ReactDom.render(<h1>No Fragment Found</h1>, root);
+    } else if (fragment.indexOf("id_token") == -1){
+        ReactDom.render(<h1>No id_token Found in Fragment</h1>, root);
+    } else {
+        const id_token = fragment.substring(fragment.indexOf("id_token=") + 9, frament.indexOf("&access_token"));
+        ReactDom.render(<h1><strong>Fragment:</strong>{id_token}</h1>, root);
+    }
+</script>
+
+</html>
