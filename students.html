@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parse Students</title>
+    <script>
+        let first = document.getElementById('firstnames');
+        let last = document.getElementById('lastnames');
+
+        function splitStudents(){
+            let students = document
+                                .getElementById('students')
+                                .value;
+
+            let individualLines = students.split(/\n/);
+            let nameSets = individualLines.map(line => line.split(',').map(x => x.trim()))
+            last.innerHTML = "<b>Last Names:</b><br />" + nameSets.map(name => name[0] + "<br/>").join('')
+            
+            first.innerHTML = "<b>First Names:</b><br />" + nameSets.map(name => name[1] + "<br/>").join('')
+        }
+    </script>
+</head>
+<body>
+    <textarea id="students" name="students"> </textarea>
+    <button onClick="splitStudents()">Submit</button>
+    <div id="lastnames" name="lastnames"></div>
+    <div id="firstnames" name="firstnames"></div>    
+</body>
+</html>
